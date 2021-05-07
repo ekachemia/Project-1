@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Go</title>
+    <link rel="icon" sizes="any" href="https://images.vexels.com/media/users/3/163844/isolated/preview/f91015d26d58a8b5bebed9f290c430e5-colorful-holi-mandala-icon-by-vexels.png"/>
+    <link href="styles.css" rel="stylesheet"><link>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="#about"><img width="50px" src="https://images.vexels.com/media/users/3/163844/isolated/preview/f91015d26d58a8b5bebed9f290c430e5-colorful-holi-mandala-icon-by-vexels.png" alt="logo"></a>
+            <header id="logo-header">
+                <h2>Just Go</h2>
+                <p style="color: #002561;">Travel with us</p>
+            </header>
+        </div>
+    <div class="nav-list">
+          <a href="#about" alt="about">About</a>
+          <a href="#georgia" alt="contct">Georgia</a>
+          <a href="#gallery" alt="gallery">gallery</a>
+          <a href="#price" alt="price">Pricing</a>
+          <a href="#contact" alt="contct">Contact</a>
+        </div>
+    </nav>  
+    <div class="page-1" id="about">
+        <div class="slideshow">
+
+            <div class="slides fade">
+              <img src="https://hotsale.ge/files/offers/aqciebi/diamondtravelgeorgia/svaneti/1.jpg" style="width:100%">
+            </div>
+            
+            <div class="slides fade">
+            
+              <img src="https://www.travelsauro.com/wp-content/uploads/2019/03/chaukhi-massif.jpg" style="width:100%">
+            </div>
+            
+            <div class="slides fade">
+              <img src="https://www.chasingthedonkey.com/wp-content/uploads/2018/11/Batumi_Georgia_shutterstock_594149126.jpg" style="width:100%">
+            </div>
+            
+        
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="curSlide(1)"></span> 
+              <span class="dot" onclick="curSlide(2)"></span> 
+              <span class="dot" onclick="curSlide(3)"></span> 
+            </div>
+        </div>
+            
+        <script>
+            var slideInd = 1;
+            showSlides(slideInd);
+            
+            function plusSlides(n) {
+              showSlides(slideInd += n);
+            }
+            
+            function curSlide(n) {
+              showSlides(slideInd = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("slides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideInd = 1}    
+              if (n < 1) {slideInd = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideInd-1].style.display = "block";  
+              dots[slideInd-1].className += " active";
+            }
+        </script>
+        <aside>
+        <header id="header-page1">
+            <h1 style="font-size: 50px; color: #f5de50;font-family: 'Shadows Into Light', cursive;">Just Go - <span style="font-size: 40px; color:whitesmoke; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Georgian Travel Agency</span></h1>
+        </header>  
+        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif";> <i>We are Georgian travel agency based in Tbilisi, Georgia. Join us to have unforgetable experience.</i></p>
+        <br>
+        <br>
+        <h2 id="list-header">What We Offer:</h2>
+        <div id="list">
+            <br>
+            <ul>
+                <li>Transportation</li>
+                <li>Equipment</li>
+                <li>Guide</li>
+                <li>Photographer</li>
+            </ul>
+        </div>
+        </aside>
+    </div>   
+    <div class="page-2" id="georgia">
+        <header id="header-2">
+            <h1 id="geo-header">Little About Georgia</h1>
+            <p style="font-size: 100%; color:whitesmoke; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Georgia is a small country located at the intersection of Easter Europe and Western Asia. It is part of the Caucasus Region, bounded to the west by the black sea. It is known for really tasty  culture, history,cuisine and beutiful nature. This place is great to visit at any season. </p>
+        </header>
+        <iframe id="Video" src="https://www.youtube.com/embed/Xwtvh4v56Iw;autoplay=1" frameborder="0" ng-show="showvideo" title="Video" width="45%" height="50%"></iframe>
+        <footer>
+        <hr>
+        </footer>
+    </div>
+    <div class="page-3" id="gallery" >
+        <header id="header-page-3" >
+            <h1>Tours in Georgia</h1>
+        </header>
+        <div id="examples">
+            <div id="places">
+             <h2>Visit Batumi</h2>
+             <a href="https://en.wikipedia.org/wiki/Batumi" target="_blank"><img src="https://emerging-europe.com/wp-content/uploads/2020/06/bigstock-batumi-georgia-305741179-990x556.jpg" alt="Batumi" width="100%" height="auto"></a>
+             <p>For more information about city click on picture</p>
+            </div>
+            <div id="places">
+                <h2>Visit Tbilisi</h2>
+                <a href="https://en.wikipedia.org/wiki/Tbilisi " target="_blank"><img src="https://www.travelanddestinations.com/wp-content/uploads/2020/01/Skyline-view-of-Tbilisi.jpg" alt="Tbilisi" width="100%" height="auto"></a>
+                <p>For more information about city click on picture</p>
+            </div>
+            <div id="places">
+                <h2>Visit Kutaisi</h2>
+             <a href="https://en.wikipedia.org/wiki/Kutaisi" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_%28August_2011%29-cropped.jpg/1920px-Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_%28August_2011%29-cropped.jpg" alt="kutaisi" width="100%" height="auto"></a>
+             <p>For more information about city click on picture</p>
+            </div>
+         </div>
+        </div>
+    </div>
+    <div class="page-4" id="price">
+        <table width="60%"> 
+            <tr>
+                <th>Tour Name</th>
+                <th>Places to Visit</th>
+                <th>Duration</th>
+                <th>Date</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Black Sea Tour</td>
+                <td>Anaklia, Poti, Batumi</td>
+                <td>4 Days</td>
+                <td>From June Till September</td>
+                <td>150$</td>
+            </tr>
+            <tr>
+                <td>Chaokhi-Hiking</td>
+                <td>Juta, Abudelauri Lake, Roshka</td>
+                <td>3 Days</td>
+                <td>From June Till Augest</td>
+                <td>200$</td>
+            </tr>
+            <tr>
+                <td>Kakheti Tour</td>
+                <td>Telavi, Sighnaghi</td>
+                <td>1 Days</td>
+                <td>Anytime </td>
+                <td>70$</td>
+            </tr>
+            <tr>
+                <td>Imereti Tour</td>
+                <td>Kutaisi</td>
+                <td>2 Days</td>
+                <td>From June Till Augest</td>
+                <td>150$</td>
+            </tr>
+     </table>
+    </div>
+    <div class="page-5" id="contact">
+        <header class="header-5" >
+            <h1>Leave Your Information Here and We Will Contact You </h1>
+        </header>
+            <div id="form">
+                  <label for="name-label">Name</label>
+                  <br>
+                  <input type="text" id="name-label" name="name" placeholder="Enter Your Name" required>
+                  <br>
+                  <label for="email-label">Email</label>
+                  <br>
+                  <input type="email" id="email-label" name="email" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                  <br>
+                  <label for="number-label">Phone Number</label>
+                  <br>
+                  <input type="tel" id="number-label" name="phone" placeholder="Enter Your Phone Number" pattern="[5-9]{3}-[0-9]{6}" required>
+                  <br>
+                  <label for="dropdown">Where do You Prefer to Go?</label>
+                  <br>
+                  <input list="roles" type="text" id="dropdown" name="position" placeholder="Select Place">
+                  <datalist id="roles">
+                  <option value="Sea">
+                  <option value="Mountian">
+                  <option value="City">
+                  </datalist>
+                    <br>
+                <div id="button">
+                      <input type="submit" value="Submit" id="submit">
+                </div>
+            </div>
+    </div>
+</body>
+</html> 
